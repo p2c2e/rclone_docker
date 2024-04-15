@@ -18,6 +18,7 @@ USER rclone
 
 VOLUME ["/config"]
 
-# ENTRYPOINT ["/bin/sh"]
-CMD ["/bin/sh", "-c", "tail", "-f", "/dev/null"]
 #CMD ["/bin/sh", "-c", "sleep infinity"]
+#CMD ["/bin/sh", "-c", "tail", "-f", "/dev/null"]
+CMD ["/bin/sh"] 
+ENTRYPOINT ["tail", "-f", "/dev/null"]
